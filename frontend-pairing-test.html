@@ -1,0 +1,38 @@
+<html>
+	<link rel="stylesheet" type="text/css" href="frontend-pairing-test.css" />
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="frontend-pairing-test.js"></script>
+	<head>
+		<title>Leave your comment</title>
+	</head>
+
+	<body>
+		<main id="main-content">
+			<div class="with-padding">
+				<h1 class="page-title">Your comments</h1>
+
+				<div id="errors" class="hidden error" role="alert">
+
+				</div>
+
+				<div id="comments" class="comments"></div>
+
+				<form id="frmComment" action="javascript:CommentForm.onSubmit()" method="post">
+					<legend class="visibly-hidden">You can use this form to leave a comment</legend>
+					
+					<div class="form-element">
+						<label for="txtNname">Your full name</label>
+						<input id="txtNname" name="txtName" type="text" class="form-textbox">
+					</div>
+
+					<div class="form-element">
+						<label for="txtComment">Your comment</label>
+						<textarea id="txtComment" name="txtComment" class="form-textbox"></textarea>
+					</div>
+
+					<button type="submit" class="form-button">Leave comment</button>
+				</form> 
+			</div>
+		</main>
+	</body>
+</html>
